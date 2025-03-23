@@ -32,5 +32,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/vmware-exporter:latest
-            ${{ secrets.DOCKER_USERNAME }}/vmware-exporter:${{ steps.extract_tag.outputs.VERSION }}
+            edgaras/vmware-exporter:latest
+            edgaras/vmware-exporter:${{ steps.extract_tag.outputs.VERSION }}
