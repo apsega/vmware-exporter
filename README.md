@@ -12,22 +12,7 @@ VMware Exporter is a Go-based application that collects metrics from a VMware vS
 - Exposes metrics in Prometheus format via an HTTP endpoint.
 - Supports configurable polling intervals.
 
-## Prerequisites
-
-- VMware vSphere environment.
-- Prometheus server for scraping metrics.
-- Docker (optional, for containerized deployment).
-
-## Installation
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/your-repo/vmware-exporter.git
-cd vmware-exporter
-```
-
-### Run with Docker
+## Run with Docker
 
 Build and run the Docker container:
 
@@ -129,36 +114,6 @@ This project uses the following dependencies:
 
 - [govmomi](https://github.com/vmware/govmomi) for interacting with VMware vSphere.
 - [Prometheus client_golang](https://github.com/prometheus/client_golang) for exposing metrics.
-
-### Run Locally
-
-Install dependencies:
-
-```bash
-go mod tidy
-```
-
-Run the application:
-
-```bash
-go run 
-
-main.go
-
-
-```
-
-### Testing
-
-Unit tests can be added to validate functionality. Use the following command to run tests:
-
-```bash
-go test ./...
-```
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
 
 ## License
 
