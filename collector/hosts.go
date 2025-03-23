@@ -199,7 +199,6 @@ func ExportHostMetrics(ctx context.Context, c *govmomi.Client) error {
 		// Retrieve a list of hosts in the datacenter
 		var hosts []mo.HostSystem
 
-		// err = containerView.RetrieveWithFilter(ctx, []string{"HostSystem"}, nil, &hosts, property.Filter{"name": "dc2hsr-aesx0043.vim.vitc.lt"})
 		err = containerView.Retrieve(ctx, []string{"HostSystem"}, nil, &hosts)
 		if err != nil {
 			fmt.Printf("Error retrieving hosts: %v\n", err)
